@@ -1,0 +1,278 @@
+/* Font Import */
+@font-face {
+    font-family: 'Puffy';
+    src: url('Puffy-gxW55.otf') format('opentype');
+}
+
+/* Basic Styling */
+body {
+    margin: 0;
+    font-family: 'Puffy', sans-serif;
+    color: rgb(246, 162, 215);
+    font-size: 25px;
+    background-image: url('vecteezy_pink-and-blue-heart-pattern-seamless-background_.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Container wrapping around your login text and input fields */
+.login-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;   /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    height: 100vh;         /* Take full viewport height */
+    width: 100%;           /* Take full width */
+}
+
+/* Style for your title */
+.login-title {
+    font-size: 24px;       /* Adjust as needed */
+    margin-bottom: 20px;  /* Space between title and input */
+}
+
+/* Style for your input field */
+.login-input {
+    width: 200px;          /* Adjust width as needed */
+    margin-bottom: 10px;   /* Space between input and button */
+}
+
+
+/* Envelope Styling */
+.envelope-banner {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.envelope-banner:hover {
+    transform: scale(1.07);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding:30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.close-button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color ease 1sec;
+}
+.close-button:hover{
+    color:black;
+
+}
+/* Content Styling within Modal */
+.chapter-content {
+    background-color: white;
+    padding: 50px;
+    padding-left:30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.chapter-text {
+    flex: 2;
+    padding-right: 40px;
+    word-wrap: break-word;
+}
+
+.chapter-title {
+    color: black;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.popup-image {
+    flex: 1;                  /* Adjusted flex property */
+    max-height: 60%;          /* Further reduce the max-height */
+    max-width: 35%;           /* Further reduce the max-width */
+    object-fit: contain;      /* Ensure image respects its box constraints while maintaining its aspect ratio */
+    align-self: center;
+    margin-left: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+}
+/* Arrow Button Styling */
+.arrow-button {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Puffy', sans-serif;
+    color: rgb(246, 162, 215);
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    margin: 10px; 
+}
+.login-input,
+input[type="password"] {
+    width: 200px;          /* Adjust width as needed */
+    margin-bottom: 10px;   /* Space between input and button */
+    padding: 10px;         /* Padding for better appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px;     /* Add border-radius for rounded corners */
+}
+
+/* Add focus styles for better user experience */
+.login-input:focus,
+input[type="password"]:focus {
+    outline: none;         /* Remove default focus outline */
+    border-color: rgb(246, 162, 215); /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(246, 162, 215, 0.7); /* Add a subtle box shadow on focus */
+}
+
+.arrow-button:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+    transform: scale(1.05);
+}
+
+.arrow-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    max-width: 80%;
+    margin: 0 auto; 
+}
+
+.arrow-button.left {
+    margin-right: 10px;
+}
+
+.arrow-button.right {
+    margin-left: 10px;
+}
+
+
+/* YOUTUBE VIDEO */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    height: 100vh;
+    margin-top: 150px; /* Reduced negative margin moves the content down */
+}
+
+
+.video-title {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-top: -10px; /* Adjust this value to move the title up or down */
+}
+
+.youtube-video {
+    width: 560px; /* Adjust width as needed */
+    height: 315px; /* Adjust height as needed */
+    /* For a responsive width you can use a percentage, e.g., width: 80%; */
+    border-radius: 10px; /* Optional, for rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional, for shadow effect */
+}
+.back-button {
+    display: block;
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255); /* Light grey, adjust as needed */
+    color: rgb(246, 162, 215);
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Puffy', sans-serif;
+    z-index: 1001; /* Ensures it's above other elements */
+    cursor:pointer;
+    margin:10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    
+}
+
+.back-button:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+    transform: scale(1.05);
+}
+
+/* Photo Gallery Styling */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto; /* Added margin to create space at the top */
+    padding-top: 1100px; /* Added padding to the top to push everything down */
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Change to contain to fit the entire photo within the container */
+    border-radius: 10px;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}

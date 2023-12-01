@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Teeny Beany</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <h1>For: my Bean</h1>
+
+    <!-- Envelope banner -->
+    <div class="envelope-banner" onclick="openNotepad()">
+        Your Gift!
+    </div>
+
+    <!-- Notepad Modal -->
+    <div id="notepadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeNotepad()">&times;</span>
+            <!-- New wrapper for text and image -->
+            <div class="chapter-content">
+                <div>
+                    <div class="chapter-title">
+                        From: Sexy Beast grrr   
+                    </div>
+                    <div class="chapter-text">
+                        Dear Bean Beans, I know you love thoughtful caring and smelly gifts, 
+                        so for this years anniversary, I'm trying something a bit different
+                        sooo I made you a website! I am trying really hard to keep this secret
+                        from you and all the work i've done so you can be really surprised :)) I just want you to know that 
+                        I love you so flipping damn much and happy 2 year anniversary my beautiful 
+                        stinky rice grain. You mean everything to me. - Loveys
+                    </div>
+                </div>
+                <img src="us.jpg" class="popup-image">
+            </div>
+        </div>
+        <!-- Arrow buttons moved outside the modal-content -->
+        <div class="arrow-buttons-container">   
+            <div class="arrow-button right" onclick="openNewPage('memory.html')">Memory Website</div>
+            <div class="arrow-button right" onclick="openNewPage('clickme.html')">Click me!</div>
+        </div>
+    </div>
+    
+    <script src="notepad.js" defer></script>
+</body>
+
+</html>
